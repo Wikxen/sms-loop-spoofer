@@ -4,10 +4,12 @@
     "type": "project",
     "license": "MIT",
     "authors": [
-        {
-            "name": "Hannes Kindströmmer",
-            "email": "hannes@kindstrommer.se"
-        }
+      {
+        "name": "Hannes Kindströmmer",
+        "email": "hannes@kindstrommer.se",
+        "homepage": "http://kindstrommer.se",
+        "role": "Developer"
+      }
     ],
     "minimum-stability": "beta",
     "require": {
