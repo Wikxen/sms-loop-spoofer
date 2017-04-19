@@ -1,0 +1,16 @@
+{
+    "name": "ip1sms/smsdemo",
+    "description": "A frontend demo using the ip1-php-sdk",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Hannes Kindströmmer",
+            "email": "hannes@kindstrommer.se"
+        }
+    ],
+    "minimum-stability": "beta",
+    "require": {
+        "ip1sms/ip1-php-sdk": "^0.3.0@beta"
+    }
+}
