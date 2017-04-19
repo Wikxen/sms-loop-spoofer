@@ -30,22 +30,27 @@
   <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
   <![endif]-->
   <style media="screen">
-  @font-face{font-family:vagSerifThin;src:url("http://www.ip1sms.com/assets/fonts/Linotype-VAGRoundedStd-Thin.otf");}
+  @font-face{
+    font-family:vagSerifThin;
+    src:url("http://www.ip1sms.com/assets/fonts/Linotype-VAGRoundedStd-Thin.otf");
+  }
   body{
     background: url('background.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    font-family: vagSerifThin;
   }
   h1{
     font-size: 4em;
     margin-bottom: 150px;
+    text-shadow: 3px 3px 3px #666;
   }
   </style>
 </head>
 <body>
-  <h1 class="text-center text-muted">SMS når långt</h1>
+  <h1 class="text-center text-muted">SMS Når Långt</h1>
   <div class="container">
     <main class="col-md-6 col-md-offset-3">
       <form class="form-horizontal" action="sendsms.php" method="post">
