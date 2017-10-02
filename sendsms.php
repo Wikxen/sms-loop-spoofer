@@ -11,8 +11,7 @@ $api = new Communicator($config['account'], $config['token']);
 
 // If the text is too long we exit
 if (strlen($_POST['text']) > 160) {
-    //header("Location:/");
-    echo "length";
+    header("Location:/");
 }
 
 
@@ -34,8 +33,7 @@ for ($i=0; $i < count($phoneNumbers); $i++) {
   $api->add($sms);
 }
 
-//header("Location:/?sent=success");
-
+header("Location:/?sent=success");
 
 // Turns the numbers into the correct format
 function fixNumber(string $number): string{
@@ -48,8 +46,7 @@ function fixNumber(string $number): string{
 
   // If a number is invalid
   if (!preg_match('/(07|\+46|46)[0-9]{1,15}/', $number)) {
-      //header("Location:/");
-      var_dump($number);
+      header("Location:/");
   }
 
   if (substr($number, 0, strlen($prefix)) == $prefix) {
