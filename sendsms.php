@@ -11,8 +11,7 @@ $api = new Communicator($config['account'], $config['token']);
 
 // If the text is too long we exit
 if (strlen($_POST['text']) > 160) {
-    //header("Location:/");
-    echo "length";
+    header("Location:/");
 }
 
 
@@ -34,8 +33,7 @@ for ($i=0; $i < count($phoneNumbers); $i++) {
   $api->add($sms);
 }
 
-//header("Location:/?sent=success");
-
+header("Location:/?sent=success");
 
 // Turns the numbers into the correct format
 function fixNumber(string $number): string{
@@ -43,19 +41,19 @@ function fixNumber(string $number): string{
   $alternativePrefix = '+467';
 
   // Remove unnecessary symbols
-  $number = str_replace(['-','(',')'], '', $number);
+  $number = str_replace(['-','(',')',' '], '', $number);
   $number = trim($number);
 
   // If a number is invalid
   if (!preg_match('/(07|\+46|46)[0-9]{1,15}/', $number)) {
-      //header("Location:/");
-      var_dump($number);
+      header("Location:/");
   }
-
+// Replace 07 with 467
   if (substr($number, 0, strlen($prefix)) == $prefix) {
       $number = substr($number, strlen($prefix));
       $number = "467" . $number;
   }
+  // Replace +467 with 467
   if (substr($number, 0, strlen($alternativePrefix)) == $alternativePrefix) {
       $number = substr($number, strlen($alternativePrefix));
       $number = "467" . $number;
