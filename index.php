@@ -57,16 +57,18 @@
         <fieldset>
           <div class="form-group">
             <label for="recipeint"></label>
-            <input
+            <textarea
             required
             autofocus
             class="form-control"
-            id="recipeint"
-            name="recipeint"
-            placeholder="Mottagare"
-            pattern="(07|\+46)[0-9 ]{1,15}"
-            maxlength="15"
-            title="Mottagaren måste vara ett korrekt mobiltelefon-nummer och måste börja på '07' eller '+467'">
+            id="recipients"
+            name="recipients"
+            placeholder="Lista med telefonnummer formaterat på följande sätt...
+4610-1606060
++12025550199
++12025550146"
+            title="Mottagaren måste vara ett korrekt mobiltelefon-nummer och måste börja på '07' eller '+467'"
+            rows="8"></textarea>
             <p class="help-block text-muted">Mottagare</p>
           </div>
           <div class="form-group">
