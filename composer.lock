@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "ip1sms/ip1-php-sdk",
-            "version": "0.3.1-beta",
+            "version": "0.3.3-beta",
             "source": {
                 "type": "git",
                 "url": "https://github.com/iP1SMS/ip1-php-sdk.git",
-                "reference": "9bce456599f550f837b83ba4820a830641048248"
+                "reference": "89fa1e396c94cae3dc0d58e13be0e97da6db519e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/iP1SMS/ip1-php-sdk/zipball/9bce456599f550f837b83ba4820a830641048248",
-                "reference": "9bce456599f550f837b83ba4820a830641048248",
+                "url": "https://api.github.com/repos/iP1SMS/ip1-php-sdk/zipball/89fa1e396c94cae3dc0d58e13be0e97da6db519e",
+                "reference": "89fa1e396c94cae3dc0d58e13be0e97da6db519e",
                 "shasum": ""
             },
             "require": {
@@ -48,7 +48,7 @@
                 }
             ],
             "description": "A PHP client library for the IP1SMS RESTful API",
-            "time": "2017-04-19T08:53:23+00:00"
+            "time": "2017-09-27T08:56:32+00:00"
         },
         {
             "name": "nategood/httpful",
