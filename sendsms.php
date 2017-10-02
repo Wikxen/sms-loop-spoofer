@@ -41,18 +41,19 @@ function fixNumber(string $number): string{
   $alternativePrefix = '+467';
 
   // Remove unnecessary symbols
-  $number = str_replace(['-','(',')'], '', $number);
+  $number = str_replace(['-','(',')',' '], '', $number);
   $number = trim($number);
 
   // If a number is invalid
   if (!preg_match('/(07|\+46|46)[0-9]{1,15}/', $number)) {
       header("Location:/");
   }
-
+// Replace 07 with 467
   if (substr($number, 0, strlen($prefix)) == $prefix) {
       $number = substr($number, strlen($prefix));
       $number = "467" . $number;
   }
+  // Replace +467 with 467
   if (substr($number, 0, strlen($alternativePrefix)) == $alternativePrefix) {
       $number = substr($number, strlen($alternativePrefix));
       $number = "467" . $number;
