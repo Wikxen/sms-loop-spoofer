@@ -1,14 +1,21 @@
 {
-    "name": "ip1sms/smsdemo",
-    "description": "A frontend demo using the ip1-php-sdk",
+    "name": "wikxen/sms-secret-santa",
+    "description": "A secret santa app using the ip1-php-sdk",
+    "version": "1.0.0",
     "type": "project",
     "license": "MIT",
     "authors": [
       {
+        "name": "Erik Wikström",
+        "email": "wikxen@gmail.com",
+        "homepage": "http://wikxen.se",
+        "role": "Developer"
+      },
+      {
         "name": "Hannes Kindströmmer",
         "email": "hannes@kindstrommer.se",
         "homepage": "http://kindstrommer.se",
-        "role": "Developer"
+        "role": "Original Work"
       }
     ],
     "minimum-stability": "beta",
