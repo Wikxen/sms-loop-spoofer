@@ -12,9 +12,10 @@ $api = new Communicator($config['account'], $config['token']);
 $sender = $_GET["sender"];
 $msg = $_GET["text"];
 
-if (substr($msg, 0, 5) == "santa") {
+// pick action
+if (strtolower(substr($msg, 0, 5)) == "santa") { // signup
   $name = substr($msg, 6);
   $printed = file_put_contents('santa.txt', $sender . ";" . $name . PHP_EOL, FILE_APPEND | LOCK_EX);
-} else if (substr($msg, 0, 2) == "go") {
+} else if (strtolower(substr($msg, 0, 2)) == "go") { // send
 
 }
