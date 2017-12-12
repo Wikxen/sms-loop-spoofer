@@ -14,8 +14,11 @@ $msg = $_GET["text"];
 
 // pick action
 if (strtolower(substr($msg, 0, 5)) == "santa") { // signup
+  // get name from message
   $name = substr($msg, 6);
+  // print name and number to file
   $printed = file_put_contents('santa.txt', $sender . ";" . $name . PHP_EOL, FILE_APPEND | LOCK_EX);
+  // send response
   $sms = new OutGoingSMS("Tomten", "Du är med som " . $name . "!");
   $sms->addNumber($sender);
   $api->add($sms);
