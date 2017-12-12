@@ -22,3 +22,5 @@ if (strtolower(substr($msg, 0, 5)) == "santa") { // signup
 } else if (strtolower(substr($msg, 0, 2)) == "go") { // send
 
 }
+
+echo "OK";
