@@ -13,7 +13,8 @@ $sender = $_GET["sender"];
 $msg = $_GET["text"];
 
 if (substr($msg, 0, 5) == "santa") {
-
+  $name = substr($msg, 6);
+  $printed = file_put_contents('santa.txt', $sender . ";" . $name . PHP_EOL, FILE_APPEND | LOCK_EX);
 } else if (substr($msg, 0, 2) == "go") {
 
 }
