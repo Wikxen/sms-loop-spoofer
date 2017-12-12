@@ -16,6 +16,9 @@ $msg = $_GET["text"];
 if (strtolower(substr($msg, 0, 5)) == "santa") { // signup
   $name = substr($msg, 6);
   $printed = file_put_contents('santa.txt', $sender . ";" . $name . PHP_EOL, FILE_APPEND | LOCK_EX);
+  $sms = new OutGoingSMS("Tomten", "Du är med som " . $name . "!");
+  $sms->addNumber($sender);
+  $api->add($sms);
 } else if (strtolower(substr($msg, 0, 2)) == "go") { // send
 
 }
