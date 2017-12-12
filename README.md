@@ -1,12 +1,9 @@
 # SMSDemo
-A demo website showing what you can do with the iP.1 PHP SDK in very little time.
-
+A simple secret santa app by SMS using the iP.1 PHP SDK.
 
 ## Contributors
   * **Hannes Kindströmmer** - _Initial work_
-
-### Thanks to
-  * [Unsplash](https://unsplash.com/) for providing the background image
+  * **Erik Wikström**
 
 ## License
 This software demo is licensed under the MIT license.
