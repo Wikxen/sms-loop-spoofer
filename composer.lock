@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "e56549bb8ed8176996397c0e114b5390",
+    "content-hash": "ec1cb97db9db552ec114643b64cf085e",
     "packages": [
         {
             "name": "ip1sms/ip1-php-sdk",

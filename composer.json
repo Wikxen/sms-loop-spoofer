@@ -1,7 +1,7 @@
 {
     "name": "wikxen/sms-secret-santa",
     "description": "A secret santa app using the ip1-php-sdk",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "type": "project",
     "license": "MIT",
     "authors": [
