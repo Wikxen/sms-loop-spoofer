@@ -4,8 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "4b3d4b04fea49b138815c605f38bd8ba",
-    "content-hash": "bef4fb01053ba17649f9338eb8137a40",
+    "content-hash": "e56549bb8ed8176996397c0e114b5390",
     "packages": [
         {
             "name": "ip1sms/ip1-php-sdk",
@@ -49,7 +48,7 @@
                 }
             ],
             "description": "A PHP client library for the IP1SMS RESTful API",
-            "time": "2017-09-27 08:56:32"
+            "time": "2017-09-27T08:56:32+00:00"
         },
         {
             "name": "nategood/httpful",
@@ -99,7 +98,7 @@
                 "rest",
                 "restful"
             ],
-            "time": "2015-10-26 16:11:30"
+            "time": "2015-10-26T16:11:30+00:00"
         }
     ],
     "packages-dev": [],
